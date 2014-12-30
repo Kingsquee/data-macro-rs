@@ -1,0 +1,9 @@
+[package]
+
+name = "data_macro"
+version = "0.0.1"
+authors = ["Kingsley Tolmie <kingsley.tolmie@gmail.com>"]
+
+[[example]]
+name = "example"
+path = "examples/main.rs"
