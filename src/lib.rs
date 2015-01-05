@@ -4,7 +4,6 @@
 #[macro_export]
 macro_rules! data {
     ($structtype:ident {$($var:ident: $vartype:ty = $val:expr)+}) => {
-        #[deriving(Copy)]
         pub struct $structtype {
             $(
                 pub $var: $vartype,
