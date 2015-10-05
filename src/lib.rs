@@ -9,9 +9,10 @@ macro_rules! data {
         }
 
         impl $structtype {
+            #[allow(unused_mut)]
             pub fn new() -> $structtype {
                 $(
-                    let $var = $val;
+                    let mut $var = $val;
                 )+
                 $structtype {
                     $(
